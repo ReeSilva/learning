@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('home');
-});
+Route::get('/', 'HomeController@showHome');
+Route::post('insert_post', array('as' => 'insert_post', 'uses' => 'PostsController@insertPost'));

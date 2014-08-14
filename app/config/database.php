@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'laravel',
-			'username'  => 'root',
-			'password'  => '!Reeh#2612@lsgo',
+			'host'      => 'danny.chsxkbpllp0w.us-west-2.rds.amazonaws.com',
+			'database'  => 'lovesp',
+			'username'  => 'developer',
+			'password'  => '!ITA#Reeh',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
