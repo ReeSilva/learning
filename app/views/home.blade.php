@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="small-7 medium-5 large-5 columns card form">
+        <div class="small-8 medium-8 large-5 columns card form">
             <hgroup>
                 <h3>Mostre o seu amor pela cidade mais amor do país.</h3>
             </hgroup>
@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="small-7 medium-10 large-10 small-offset-1 medium-offset-1 large-offset-1 columns">
+        <div class="small-7 medium-7 large-10 small-offset-1 medium-offset-1 large-offset-1 columns">
             @if (count($posts) < 1)
                 <div class="row">
                     <div class="small-16 columns card card-empty">
