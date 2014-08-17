@@ -16,6 +16,7 @@
                         <div class="small-12 columns">
                             {{ form::label('title', 'Título') }}
                             {{ Form::text('title', '', $attributes = array('placeholder' => 'Título da sua história', 'required' => '')) }}
+                            <small class="error">Sua história tem que ter um título.</small>
                         </div>
                     </div>
 
@@ -23,6 +24,7 @@
                         <div class="small-16 columns">
                             {{ form::label('post', 'Conte a história') }}
                             {{ Form::textarea('post', '', $attributes = array('placeholder' => 'Conte-nos a sua história', 'required' => '')) }}
+                            <small class="error">Conte-nos sua história.</small>
                         </div>
                     </div>
 
