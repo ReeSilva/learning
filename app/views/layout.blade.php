@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta property="og:title" content="loveSP" />
-    <meta property="og:image" content="{{ Config::get(app.url); }}/learning/img/icon.png" />
-    <meta property="og:url" content="{{ Config::get(app.url); }}" />
+    <meta property="og:image" content="{{ Config::get('app.url') }}/learning/img/icon.png" />
+    <meta property="og:url" content="{{ Config::get('app.url') }}" />
     <meta property="og:description" content="Venha declarar o seu amor pela cidade mais amor do Brasil. E se você não sabe porque São Paulo é tão maravilhosa, venha ver o que estão dizendo e entenda porque esse lugar é tão mágico." />
-    <link rel="icon" href="{{ Config::get('app.url'); }}/learning/img/favicon.ico" />
+    <link rel="icon" href="{{ Config::get('app.url') }}/learning/img/favicon.ico" />
     {{ HTML::style('learning/stylesheets/app.css'); }}
     {{ HTML::script('learning/bower_components/modernizr/modernizr.js'); }}
 </head>
