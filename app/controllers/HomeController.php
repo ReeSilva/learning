@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showHome()
 	{
-        $posts = Post::all();
+        $posts = Post::orderBy('id', 'DESC')->get();
 
         return View::make('home')->with('posts', $posts);
 	}
