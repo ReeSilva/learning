@@ -8,6 +8,7 @@
     <meta property="og:url" content="{{ Config::get('app.url') }}" />
     <meta property="og:description" content="Venha declarar o seu amor pela cidade mais amor do Brasil. E se você não sabe porque São Paulo é tão maravilhosa, venha ver o que estão dizendo." />
     <link rel="icon" href="{{ Config::get('app.url') }}/learning/img/favicon.ico" />
+    <title>loveSP</title>
     {{ HTML::style('learning/stylesheets/app.css'); }}
     {{ HTML::script('learning/bower_components/modernizr/modernizr.js'); }}
 </head>
