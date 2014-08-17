@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="small-5 columns card form">
+        <div class="small-6 medium-5 large-5 columns card form">
             <hgroup>
                 <h3>Mostre o seu amor pela cidade mais amor do país.</h3>
             </hgroup>
