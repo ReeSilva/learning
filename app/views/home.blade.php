@@ -7,7 +7,7 @@
                 <h3>Mostre o seu amor pela cidade mais amor do país.</h3>
             </hgroup>
 
-            {{ Form::open(array('route' => 'insert_post')) }}
+            {{ Form::open(array('route' => 'insert_post', 'data-abide' => '')) }}
                 <fieldset>
 
                     <legend>O que São Paulo fez pra você?</legend>
@@ -15,14 +15,14 @@
                     <div class="row">
                         <div class="small-12 columns">
                             {{ form::label('title', 'Título') }}
-                            {{ Form::text('title', '', $attributes = array('placeholder' => 'Título da sua história')) }}
+                            {{ Form::text('title', '', $attributes = array('placeholder' => 'Título da sua história', 'required' => '')) }}
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="small-16 columns">
-                            {{ form::label('title', 'Título') }}
-                            {{ Form::textarea('post', '', $attributes = array('placeholder' => 'Conte-nos a sua história')) }}
+                            {{ form::label('post', 'Conte a história') }}
+                            {{ Form::textarea('post', '', $attributes = array('placeholder' => 'Conte-nos a sua história', 'required' => '')) }}
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@
                         <div class="small-16 columns card">
                             <hgroup>
                                 <h2>{{ $post->title }}</h2>
-<!--                                <h5>Por Anônimo em 01/01/1980 às 19h33</h5>-->
+                                <h5>Por Anônimo em {{ date("d/m/Y", strtotime( $post->created_at )) }} às {{ date("H:i:s", strtotime( $post->created_at )) }}</h5>
                             </hgroup>
                             <hr/>
                             <p>{{ $post->post }}</p>
